@@ -17,9 +17,9 @@ export default function Signup(props) {
 				<legend className="login-signup-header">Create Account</legend>
 				<div className="labels-inputs-container">
 					<label className="signup-pass-label">Email:</label>
-					<input className="email-password-input" id="signup-email" type="email" placeholder="e.g., new@demo.com" required value="" />
+					<input className="email-password-input" id="signup-email" type="email" placeholder="e.g., new@demo.com" required />
 					<label className="signup-pass-label">Password:</label>
-					<input className="email-password-input" id="signup-password" type="password" placeholder="e.g., new-password"  required value="" />
+					<input className="email-password-input" id="signup-password" type="password" placeholder="e.g., new-password"  required />
 				</div>
 				<button type="submit" id="signup-events-page" className="signup-login-button">Create New Account</button>	
 			</fieldset>

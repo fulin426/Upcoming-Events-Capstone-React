@@ -19,9 +19,9 @@ export default function Login(props) {
 				<p>Demo password: demo</p>
 				<div className="labels-inputs-container">
 					<label className="signup-pass-label">Email:</label>
-					<input className="email-password-input" id="login-email" type="email" placeholder="e.g., demo@demo.com" required value="" />
+					<input className="email-password-input" id="login-email" type="email" placeholder="e.g., demo@demo.com" required />
 					<label className="signup-pass-label">Password:</label>
-					<input className="email-password-input" id="login-password" type="password" placeholder="e.g., demo-password"  required value=""/>
+					<input className="email-password-input" id="login-password" type="password" placeholder="e.g., demo-password"  required />
 				</div>
 				<button type="submit" id="login-events-page" className="signup-login-button">Log In</button>	
 			</fieldset>

@@ -68321,13 +68321,13 @@
 							{ className: 'signup-pass-label' },
 							'Email:'
 						),
-						_react2.default.createElement('input', { className: 'email-password-input', id: 'login-email', type: 'email', placeholder: 'e.g., demo@demo.com', required: true, value: '' }),
+						_react2.default.createElement('input', { className: 'email-password-input', id: 'login-email', type: 'email', placeholder: 'e.g., demo@demo.com', required: true }),
 						_react2.default.createElement(
 							'label',
 							{ className: 'signup-pass-label' },
 							'Password:'
 						),
-						_react2.default.createElement('input', { className: 'email-password-input', id: 'login-password', type: 'password', placeholder: 'e.g., demo-password', required: true, value: '' })
+						_react2.default.createElement('input', { className: 'email-password-input', id: 'login-password', type: 'password', placeholder: 'e.g., demo-password', required: true })
 					),
 					_react2.default.createElement(
 						'button',
@@ -68409,13 +68409,13 @@
 							{ className: 'signup-pass-label' },
 							'Email:'
 						),
-						_react2.default.createElement('input', { className: 'email-password-input', id: 'signup-email', type: 'email', placeholder: 'e.g., new@demo.com', required: true, value: '' }),
+						_react2.default.createElement('input', { className: 'email-password-input', id: 'signup-email', type: 'email', placeholder: 'e.g., new@demo.com', required: true }),
 						_react2.default.createElement(
 							'label',
 							{ className: 'signup-pass-label' },
 							'Password:'
 						),
-						_react2.default.createElement('input', { className: 'email-password-input', id: 'signup-password', type: 'password', placeholder: 'e.g., new-password', required: true, value: '' })
+						_react2.default.createElement('input', { className: 'email-password-input', id: 'signup-password', type: 'password', placeholder: 'e.g., new-password', required: true })
 					),
 					_react2.default.createElement(
 						'button',
@@ -68486,7 +68486,7 @@
 			_react2.default.createElement(
 				'form',
 				{ className: 'searchbar-button-container', role: 'search' },
-				_react2.default.createElement('input', { className: 'events-search-bar', value: '', type: 'search', placeholder: 'Search Artist' }),
+				_react2.default.createElement('input', { className: 'events-search-bar', type: 'search', placeholder: 'Search Artist' }),
 				_react2.default.createElement(
 					'button',
 					{ className: 'events-search-button', role: 'button' },
@@ -68546,11 +68546,11 @@
 			_react2.default.createElement(
 				'div',
 				{ className: 'favorite-artists-container' },
-				_react2.default.createElement('input', { type: 'hidden', name: 'topArtists-id', id: 'topArtists-id', value: '' }),
+				_react2.default.createElement('input', { type: 'hidden', name: 'topArtists-id', id: 'topArtists-id' }),
 				_react2.default.createElement(
 					'div',
 					{ className: 'favorites-artist-wrapper' },
-					_react2.default.createElement('input', { id: 'artist-1', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement('input', { id: 'artist-1', className: 'fav-artist-input' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'icons-wrapper' },
@@ -68561,7 +68561,7 @@
 				_react2.default.createElement(
 					'div',
 					{ className: 'favorites-artist-wrapper' },
-					_react2.default.createElement('input', { id: 'artist-2', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement('input', { id: 'artist-2', className: 'fav-artist-input' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'icons-wrapper' },
@@ -68572,7 +68572,7 @@
 				_react2.default.createElement(
 					'div',
 					{ className: 'favorites-artist-wrapper' },
-					_react2.default.createElement('input', { id: 'artist-3', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement('input', { id: 'artist-3', className: 'fav-artist-input' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'icons-wrapper' },
@@ -68583,7 +68583,7 @@
 				_react2.default.createElement(
 					'div',
 					{ className: 'favorites-artist-wrapper' },
-					_react2.default.createElement('input', { id: 'artist-4', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement('input', { id: 'artist-4', className: 'fav-artist-input' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'icons-wrapper' },
@@ -68594,7 +68594,7 @@
 				_react2.default.createElement(
 					'div',
 					{ className: 'favorites-artist-wrapper' },
-					_react2.default.createElement('input', { id: 'artist-5', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement('input', { id: 'artist-5', className: 'fav-artist-input' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'icons-wrapper' },

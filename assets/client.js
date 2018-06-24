@@ -1,9 +1,9 @@
 //On startup
-/*$(document).ready(function () {
+$(document).ready(function () {
   $('section').hide();
   $('.log-out').hide();
   $('#landing-page').show();
-});*/
+});
 
 const API_Key ='BNciuRNtRNFoYYJG';
 
@@ -120,32 +120,32 @@ function ifNull(time) {
 
 //Triggers
 //Landing Page Log In
-$('#reactLandingPage').on('click', '#login-trigger', event => {
+$(document).on('click', '#login-trigger', event => {
   event.preventDefault();
     $('section').hide();
     $('#login-page').show();
 });
 //Landing Page Sign Up
-$('#reactLandingPage').on('click', '#get-started-trigger', event => {
+$(document).on('click', '#get-started-trigger', event => {
   event.preventDefault();
     $('section').hide();
     $('#login-page').hide();
     $('#sign-up-page').show();
 });
 //Not a Member? Sign Up
-$('#reactLogin').on('click', '#login-form-signup-trigger', event => {
+$(document).on('click', '#login-form-signup-trigger', event => {
   event.preventDefault();
     $('section').hide();
     $('#sign-up-page').show();
 });
 //Already a member? Sign in
-$('#reactSignup').on('click', '#login-form-login-trigger', event => {
+$(document).on('click', '#login-form-login-trigger', event => {
   event.preventDefault();
     $('section').hide();
     $('#login-page').show();
 });
 //log into events page
-$('#login-events-page').on('click', event => {
+$(document).on('click', '#login-events-page', event => {
   event.preventDefault();
     const email = $('#login-email').val();
     const password = $('#login-password').val();
@@ -188,7 +188,7 @@ $('#login-events-page').on('click', event => {
         };
 });
 //sign up new account
-$('#signup-events-page').on('click', event => {
+$(document).on('click', '#signup-events-page', event => {
   event.preventDefault();
     const email = $('#signup-email').val();
     const password = $('#signup-password').val();
@@ -232,13 +232,13 @@ $('#signup-events-page').on('click', event => {
         };
 });
 //log-out
-$('.log-out').on('click', event => {
+$(document).on('click', '.log-out', event => {
   event.preventDefault();
     location.reload();
 })
 
 //Favorite Artist Search Trigger
-$('.fa-eye').on('click', event => {
+$(document).on('click', '.fa-eye', event => {
   event.preventDefault();
   const favoriteArtist = $(event.target).closest('.favorites-artist-wrapper').find('.fav-artist-input').val();
   $('.events-search-bar').val('');
@@ -247,7 +247,7 @@ $('.fa-eye').on('click', event => {
 });
 
 //Edit Top 5 trigger
-$('.fa-edit').on('click', event => {
+$(document).on('click', '.fa-edit', event => {
   event.preventDefault();
     const newFavorite1 = $('#artist-1').val();
     const newFavorite2 = $('#artist-2').val();
@@ -335,7 +335,7 @@ function displayMyTopFive(loggedInUser) {
             });
 }
 //Search for Artist
-$('.events-search-button').on('click', event => {
+$(document).on('click', '.events-search-button', event => {
   event.preventDefault();
   let artist = $('.events-search-bar').val();
   if (artist === '') {
@@ -347,7 +347,7 @@ $('.events-search-button').on('click', event => {
 });
 
 //Add event
-$('.my-search-results-container').on('click', '.fa-plus-square', function(event) {
+$(document).on('click', '.my-search-results-container .fa-plus-square', function(event) {
     event.preventDefault();
     const newDate = $(event.target).closest('.my-events').find('.event-date').text();
     const newTime = $(event.target).closest('.my-events').find('.event-time').text();
@@ -421,7 +421,7 @@ function displayMyEvents(loggedInUser) {
             });
 }
 //Delete event
-$('.my-saved-events-container').on('click', '.delete-button', function(event) {
+$(document).on('click', '.my-saved-events-container .delete-button', function(event) {
     event.preventDefault();
     const loggedInUser = $('.loggedin-user').val();
     let eventId = $(event.target).closest('.my-events').find('.event-id').val();
