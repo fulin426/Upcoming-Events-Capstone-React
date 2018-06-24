@@ -11,6 +11,7 @@ import Signup from '../js/components/signup';
 import SearchBar from '../js/components/search-bar';
 import TopFive from '../js/components/top-five';
 import EventResults from '../js/components/event-results';
+import MyEvents from '../js/components/event-results';
 
 document.addEventListener('DOMContentLoaded', () =>
 	{return ReactDOM.render(<Header />,
@@ -41,5 +42,10 @@ document.addEventListener('DOMContentLoaded', () =>
 		document.getElementById('reactTopFive'));} );
 
 document.addEventListener('DOMContentLoaded', () =>
+	{return ReactDOM.render(<MyEvents  />,
+		document.getElementById('reactMyEvents'));} );
+
+document.addEventListener('DOMContentLoaded', () =>
 	{return ReactDOM.render(<EventResults  />,
 		document.getElementById('reactEventResults'));} );
+
