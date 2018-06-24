@@ -88,6 +88,10 @@
 	
 	var _eventResults2 = _interopRequireDefault(_eventResults);
 	
+	var _myEvents = __webpack_require__(554);
+	
+	var _myEvents2 = _interopRequireDefault(_myEvents);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -119,6 +123,10 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 		return _reactDom2.default.render(_react2.default.createElement(_topFive2.default, null), document.getElementById('reactTopFive'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+		return _reactDom2.default.render(_react2.default.createElement(_myEvents2.default, null), document.getElementById('reactMyEvents'));
 	});
 	
 	document.addEventListener('DOMContentLoaded', function () {
@@ -68654,6 +68662,56 @@
 				)
 			),
 			_react2.default.createElement('div', { className: 'my-search-results-container', 'aria-live': 'assertive', hidden: true })
+		);
+	}
+
+/***/ }),
+/* 554 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = Header;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function Header(props) {
+		return _react2.default.createElement(
+			'div',
+			null,
+			_react2.default.createElement(
+				'div',
+				{ className: 'my-events-header' },
+				_react2.default.createElement(
+					'h1',
+					null,
+					'My Events'
+				)
+			),
+			_react2.default.createElement('div', { className: 'my-saved-events-container', 'aria-live': 'assertive', hidden: true })
 		);
 	}
 

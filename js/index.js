@@ -11,7 +11,7 @@ import Signup from '../js/components/signup';
 import SearchBar from '../js/components/search-bar';
 import TopFive from '../js/components/top-five';
 import EventResults from '../js/components/event-results';
-import MyEvents from '../js/components/event-results';
+import MyEvents from '../js/components/my-events';
 
 document.addEventListener('DOMContentLoaded', () =>
 	{return ReactDOM.render(<Header />,
