@@ -120,7 +120,7 @@ function ifNull(time) {
 
 //Triggers
 //Landing Page Log In
-$('#login-trigger').on('click', event => {
+$('#reactLandingPage').on('click', '#login-trigger', event => {
   event.preventDefault();
     $('section').hide();
     $('#login-page').show();

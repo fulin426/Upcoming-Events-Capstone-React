@@ -68,6 +68,10 @@
 	
 	var _landingPage2 = _interopRequireDefault(_landingPage);
 	
+	var _login = __webpack_require__(549);
+	
+	var _login2 = _interopRequireDefault(_login);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -83,6 +87,10 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 		return _reactDom2.default.render(_react2.default.createElement(_landingPage2.default, null), document.getElementById('reactLandingPage'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+		return _reactDom2.default.render(_react2.default.createElement(_login2.default, null), document.getElementById('reactLogin'));
 	});
 
 /***/ }),
@@ -68201,6 +68209,104 @@
 							'ENJOY MUSIC'
 						),
 						_react2.default.createElement('i', { className: 'fas fa-music fa-8x' })
+					)
+				)
+			)
+		);
+	}
+
+/***/ }),
+/* 549 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = Login;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function Login(props) {
+		return _react2.default.createElement(
+			'section',
+			{ id: 'login-page', className: 'login-sign-pages' },
+			_react2.default.createElement(
+				'form',
+				{ className: 'signup-login-form', role: 'form' },
+				_react2.default.createElement(
+					'fieldset',
+					{ className: 'labels-inputs' },
+					_react2.default.createElement(
+						'legend',
+						{ className: 'login-signup-header' },
+						'Log In'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Demo email: demo@demo.com'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Demo password: demo'
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'labels-inputs-container' },
+						_react2.default.createElement(
+							'label',
+							{ className: 'signup-pass-label' },
+							'Email:'
+						),
+						_react2.default.createElement('input', { className: 'email-password-input', id: 'login-email', type: 'email', placeholder: 'e.g., demo@demo.com', required: true, value: '' }),
+						_react2.default.createElement(
+							'label',
+							{ className: 'signup-pass-label' },
+							'Password:'
+						),
+						_react2.default.createElement('input', { className: 'email-password-input', id: 'login-password', type: 'password', placeholder: 'e.g., demo-password', required: true, value: '' })
+					),
+					_react2.default.createElement(
+						'button',
+						{ type: 'submit', id: 'login-events-page', className: 'signup-login-button' },
+						'Log In'
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'already-member' },
+					_react2.default.createElement(
+						'p',
+						null,
+						'Not a member? ',
+						_react2.default.createElement(
+							'a',
+							{ id: 'login-form-signup-trigger', href: '#', 'aria-label': 'member sign up' },
+							'Sign Up'
+						)
 					)
 				)
 			)
