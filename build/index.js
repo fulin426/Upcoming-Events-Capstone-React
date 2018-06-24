@@ -76,6 +76,14 @@
 	
 	var _signup2 = _interopRequireDefault(_signup);
 	
+	var _searchBar = __webpack_require__(551);
+	
+	var _searchBar2 = _interopRequireDefault(_searchBar);
+	
+	var _topFive = __webpack_require__(552);
+	
+	var _topFive2 = _interopRequireDefault(_topFive);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -99,6 +107,14 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 		return _reactDom2.default.render(_react2.default.createElement(_signup2.default, null), document.getElementById('reactSignup'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+		return _reactDom2.default.render(_react2.default.createElement(_searchBar2.default, null), document.getElementById('reactSearchBar'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+		return _reactDom2.default.render(_react2.default.createElement(_topFive2.default, null), document.getElementById('reactTopFive'));
 	});
 
 /***/ }),
@@ -68403,6 +68419,171 @@
 							{ id: 'login-form-login-trigger', href: '#' },
 							'Sign In'
 						)
+					)
+				)
+			)
+		);
+	}
+
+/***/ }),
+/* 551 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = SearchBar;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function SearchBar(props) {
+		return _react2.default.createElement(
+			'div',
+			{ className: 'col-6 search-section' },
+			_react2.default.createElement(
+				'p',
+				{ id: 'welcome-user' },
+				'Welcome'
+			),
+			_react2.default.createElement(
+				'form',
+				{ className: 'searchbar-button-container', role: 'search' },
+				_react2.default.createElement('input', { className: 'events-search-bar', value: '', type: 'search', placeholder: 'Search Artist' }),
+				_react2.default.createElement(
+					'button',
+					{ className: 'events-search-button', role: 'button' },
+					_react2.default.createElement('i', { className: 'fas fa-search' })
+				)
+			)
+		);
+	}
+
+/***/ }),
+/* 552 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = TopFive;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function TopFive(props) {
+		return _react2.default.createElement(
+			'div',
+			{ className: 'col-6 favorite-artists' },
+			_react2.default.createElement(
+				'div',
+				{ className: 'favorites-header-wrapper' },
+				_react2.default.createElement(
+					'h2',
+					null,
+					'Top 5 ',
+					_react2.default.createElement('i', { className: 'fas fa-star' })
+				)
+			),
+			_react2.default.createElement(
+				'div',
+				{ className: 'favorite-artists-container' },
+				_react2.default.createElement('input', { type: 'hidden', name: 'topArtists-id', id: 'topArtists-id', value: '' }),
+				_react2.default.createElement(
+					'div',
+					{ className: 'favorites-artist-wrapper' },
+					_react2.default.createElement('input', { id: 'artist-1', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'icons-wrapper' },
+						_react2.default.createElement('i', { className: 'fas fa-edit' }),
+						_react2.default.createElement('i', { className: 'far fa-eye' })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'favorites-artist-wrapper' },
+					_react2.default.createElement('input', { id: 'artist-2', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'icons-wrapper' },
+						_react2.default.createElement('i', { className: 'fas fa-edit' }),
+						_react2.default.createElement('i', { className: 'far fa-eye' })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'favorites-artist-wrapper' },
+					_react2.default.createElement('input', { id: 'artist-3', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'icons-wrapper' },
+						_react2.default.createElement('i', { className: 'fas fa-edit' }),
+						_react2.default.createElement('i', { className: 'far fa-eye' })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'favorites-artist-wrapper' },
+					_react2.default.createElement('input', { id: 'artist-4', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'icons-wrapper' },
+						_react2.default.createElement('i', { className: 'fas fa-edit' }),
+						_react2.default.createElement('i', { className: 'far fa-eye' })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'favorites-artist-wrapper' },
+					_react2.default.createElement('input', { id: 'artist-5', className: 'fav-artist-input', value: '' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'icons-wrapper' },
+						_react2.default.createElement('i', { className: 'fas fa-edit' }),
+						_react2.default.createElement('i', { className: 'far fa-eye' })
 					)
 				)
 			)

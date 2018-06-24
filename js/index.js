@@ -8,6 +8,8 @@ import Footer from '../js/components/footer';
 import LandingPage from '../js/components/landing-page';
 import Login from '../js/components/login';
 import Signup from '../js/components/signup';
+import SearchBar from '../js/components/search-bar';
+import TopFive from '../js/components/top-five';
 
 document.addEventListener('DOMContentLoaded', () =>
 	{return ReactDOM.render(<Header />,
@@ -28,3 +30,11 @@ document.addEventListener('DOMContentLoaded', () =>
 document.addEventListener('DOMContentLoaded', () =>
 	{return ReactDOM.render(<Signup />,
 		document.getElementById('reactSignup'));} );
+
+document.addEventListener('DOMContentLoaded', () =>
+	{return ReactDOM.render(<SearchBar  />,
+		document.getElementById('reactSearchBar'));} );
+
+document.addEventListener('DOMContentLoaded', () =>
+	{return ReactDOM.render(<TopFive  />,
+		document.getElementById('reactTopFive'));} );
