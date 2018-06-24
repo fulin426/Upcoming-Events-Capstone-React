@@ -64,6 +64,10 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
+	var _landingPage = __webpack_require__(548);
+	
+	var _landingPage2 = _interopRequireDefault(_landingPage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -75,6 +79,10 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 		return _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.getElementById('reactFooter'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+		return _reactDom2.default.render(_react2.default.createElement(_landingPage2.default, null), document.getElementById('reactLandingPage'));
 	});
 
 /***/ }),
@@ -68068,6 +68076,131 @@
 						'a',
 						{ href: 'https://github.com/fulin426\'aria-label=\'Github Account' },
 						_react2.default.createElement('i', { className: 'fab fa-github fa-2x' })
+					)
+				)
+			)
+		);
+	}
+
+/***/ }),
+/* 548 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = LandingPage;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function LandingPage(props) {
+		return _react2.default.createElement(
+			'section',
+			{ id: 'landing-page' },
+			_react2.default.createElement(
+				'div',
+				{ className: 'landing-image-container' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'login-getstarted-wrapper' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'log-in' },
+						_react2.default.createElement(
+							'button',
+							{ id: 'login-trigger', className: 'log-in-button' },
+							'Log In'
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'not-member' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'not-member-text' },
+							_react2.default.createElement(
+								'p',
+								null,
+								'Not a member? Let\'s'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'get-started' },
+							_react2.default.createElement(
+								'button',
+								{ id: 'get-started-trigger', className: 'get-started-button' },
+								'Get Started'
+							)
+						)
+					)
+				)
+			),
+			_react2.default.createElement(
+				'div',
+				{ className: 'row icons-container' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'col-4' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'icon search' },
+						_react2.default.createElement(
+							'h2',
+							{ className: 'icon-description' },
+							'SEARCH'
+						),
+						_react2.default.createElement('i', { className: 'fas fa-search fa-8x' })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'col-4' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'icon calendar' },
+						_react2.default.createElement(
+							'h2',
+							{ className: 'icon-description' },
+							'ADD EVENTS'
+						),
+						_react2.default.createElement('i', { className: 'far fa-calendar-alt fa-8x' })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'col-4' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'icon music' },
+						_react2.default.createElement(
+							'h2',
+							{ className: 'icon-description' },
+							'ENJOY MUSIC'
+						),
+						_react2.default.createElement('i', { className: 'fas fa-music fa-8x' })
 					)
 				)
 			)
