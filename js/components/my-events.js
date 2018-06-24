@@ -12,10 +12,10 @@ configure({ adapter: new Adapter() });
 export default function Header(props) {
 	return (
 		<div>
-			<div class='my-events-header'>
+			<div className="my-events-header">
 				<h1>My Events</h1>
 			</div>
-			<div class='my-saved-events-container' aria-live="assertive" hidden>
+			<div className="my-saved-events-container" aria-live="assertive" hidden>
 			</div>
 		</div>	
 	)
