@@ -60,6 +60,10 @@
 	
 	var _header2 = _interopRequireDefault(_header);
 	
+	var _footer = __webpack_require__(547);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -67,6 +71,10 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 		return _reactDom2.default.render(_react2.default.createElement(_header2.default, null), document.getElementById('reactHeader'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+		return _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.getElementById('reactFooter'));
 	});
 
 /***/ }),
@@ -67989,6 +67997,82 @@
 	}
 	
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+/* 547 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = Footer;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function Footer(props) {
+		return _react2.default.createElement(
+			'footer',
+			{ role: 'contentinfo' },
+			_react2.default.createElement(
+				'p',
+				null,
+				'\xA9 Fu-Lin Liu'
+			),
+			_react2.default.createElement(
+				'div',
+				{ className: 'contacts-wrapper' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'contact-logo email' },
+					_react2.default.createElement(
+						'a',
+						{ href: 'mailto:fulin426@gmail.com?subject=Hello%20There', 'aria-label': 'email contact info' },
+						_react2.default.createElement('i', { className: 'far fa-envelope fa-2x' })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'contact-logo linkedin' },
+					_react2.default.createElement(
+						'a',
+						{ href: 'https://www.linkedin.com/in/fu-lin-liu-46694714/\' aria-label=\'Linkedin Page' },
+						_react2.default.createElement('i', { className: 'fab fa-linkedin fa-2x' })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'contact-logo github' },
+					_react2.default.createElement(
+						'a',
+						{ href: 'https://github.com/fulin426\'aria-label=\'Github Account' },
+						_react2.default.createElement('i', { className: 'fab fa-github fa-2x' })
+					)
+				)
+			)
+		);
+	}
 
 /***/ })
 /******/ ]);
