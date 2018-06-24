@@ -1,9 +1,9 @@
 //On startup
-$(document).ready(function () {
+/*$(document).ready(function () {
   $('section').hide();
   $('.log-out').hide();
   $('#landing-page').show();
-});
+});*/
 
 const API_Key ='BNciuRNtRNFoYYJG';
 
