@@ -126,20 +126,20 @@ $('#reactLandingPage').on('click', '#login-trigger', event => {
     $('#login-page').show();
 });
 //Landing Page Sign Up
-$('#get-started-trigger').on('click', event => {
+$('#reactLandingPage').on('click', '#get-started-trigger', event => {
   event.preventDefault();
     $('section').hide();
     $('#login-page').hide();
     $('#sign-up-page').show();
 });
 //Not a Member? Sign Up
-$('#login-form-signup-trigger').on('click', event => {
+$('#reactLogin').on('click', '#login-form-signup-trigger', event => {
   event.preventDefault();
     $('section').hide();
     $('#sign-up-page').show();
 });
 //Already a member? Sign in
-$('#login-form-login-trigger').on('click', event => {
+$('#reactSignup').on('click', '#login-form-login-trigger', event => {
   event.preventDefault();
     $('section').hide();
     $('#login-page').show();

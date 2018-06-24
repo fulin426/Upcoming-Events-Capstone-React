@@ -7,6 +7,7 @@ import Header from '../js/components/header';
 import Footer from '../js/components/footer';
 import LandingPage from '../js/components/landing-page';
 import Login from '../js/components/login';
+import Signup from '../js/components/signup';
 
 document.addEventListener('DOMContentLoaded', () =>
 	{return ReactDOM.render(<Header />,
@@ -23,3 +24,7 @@ document.addEventListener('DOMContentLoaded', () =>
 document.addEventListener('DOMContentLoaded', () =>
 	{return ReactDOM.render(<Login />,
 		document.getElementById('reactLogin'));} );
+
+document.addEventListener('DOMContentLoaded', () =>
+	{return ReactDOM.render(<Signup />,
+		document.getElementById('reactSignup'));} );
