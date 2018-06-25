@@ -23,6 +23,7 @@ Live preview with Node at https://capstone-upcoming-events.herokuapp.com/ and wi
 * CSS
 * JavaScript
 * Jquery
+* React
 
 ### Back End
 * Node.js
